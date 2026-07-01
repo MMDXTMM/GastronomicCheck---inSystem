@@ -1,4 +1,4 @@
-# hm-dianping
+# GastronomicCheck---inSystem
 
 基于 Spring Boot 的点评类后端项目，包含店铺、博客、优惠券秒杀、关注等常见业务模块，并集成 Redis 缓存与分布式锁。
 
@@ -13,17 +13,16 @@
 ## 项目结构
 
 ```
-hm-dianping/          # Maven 主工程
-  src/main/java/      # 业务代码
-  src/main/resources/ # 配置与 SQL 脚本
-面试资料/              # 面试相关辅助资料
+GastronomicCheck---inSystem/   # Maven 主工程
+  src/main/java/               # 业务代码
+  src/main/resources/          # 配置与 SQL 脚本
 ```
 
 ## 本地运行
 
-1. 创建 MySQL 数据库，并执行 `hm-dianping/src/main/resources/db/hmdp.sql`
-2. 修改 `hm-dianping/src/main/resources/application.yaml` 中的数据库与 Redis 连接信息
-3. 在项目根目录进入 `hm-dianping` 后执行：
+1. 创建 MySQL 数据库，并执行 `GastronomicCheck---inSystem/src/main/resources/db/hmdp.sql`
+2. 修改 `GastronomicCheck---inSystem/src/main/resources/application.yaml` 中的数据库与 Redis 连接信息
+3. 进入 `GastronomicCheck---inSystem` 目录后执行：
 
 ```bash
 mvn spring-boot:run
